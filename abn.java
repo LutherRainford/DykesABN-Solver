@@ -2,6 +2,13 @@
 import java.util.Scanner;
 
 public class abn {
+    public static void main(String[] args){
+        Scanner kboard = new Scanner(System.in);
+        System.out.print("Enter Number of Digits: ");
+        int digits = kboard.nextInt();
+        abn.findABN(digits);
+    }
+    
     public static boolean isABN(int num){
         String numstr = "";
  
@@ -49,12 +56,5 @@ public class abn {
                 System.out.println(abn);
             }
         }
-    }
- 
-    public static void main(String[] args){
-        Scanner kboard = new Scanner(System.in);
-        System.out.print("Enter Number of Digits: ");
-        int digits = kboard.nextInt();
-        abn.findABN(digits);
     }
 }
